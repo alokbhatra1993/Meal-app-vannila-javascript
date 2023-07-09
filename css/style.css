@@ -6,6 +6,9 @@ body {
 nav.navbar.bg-body-tertiary {
   background: red !important;
 }
+button#searchButton {
+  background: red;
+}
 nav.navbar.bg-body-tertiary a {
   color: #fff;
 }
@@ -28,10 +31,25 @@ input[type="text"] {
 button {
   padding: 5px 10px;
   font-size: 16px;
-  background-color: #4CAF50;
   color: #fff;
   border: none;
   cursor: pointer;
+}
+button.btn-fav {
+  background: #fff;
+  color: #000;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 6px 20px;
+}
+ .thin {
+  background-color: #4CAF50;
+}
+
+ .solid {
+  background-color: red;
+
 }
 
 #mealList {
@@ -63,3 +81,26 @@ button {
 .meal p {
   margin: 5px 0;
 }
+#mealList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #f2f2f2;
+  color: #000;
+}
+#mealList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #f2f2f2;
+  color: #000;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .meal{
+    width: 100%;
+  }
+}
+
