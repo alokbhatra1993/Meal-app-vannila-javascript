@@ -32,7 +32,7 @@ function searchMeals() {
         console.log({ favoritesItem, parseFavorites });
 
         //favorite button style
-        if (parseFavorites.includes(meal.idMeal)) {
+        if (parseFavorites && parseFavorites.includes(meal.idMeal)) {
           favBtn.textContent = "Remove Favorite";
           favBtn.classList.add("solid");
         } else {
